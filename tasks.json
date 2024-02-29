@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Design,  Api  & Clientt",
+    "assignedTo": "Suresh Adhikari",
+    "dueDate": "2023-11-15",
+    "priority": "Medium",
+    "status": "Completed",
+    "id": 1
+  },
+  {
+    "description": "Edit and Delete Data Api & Client",
+    "assignedTo": "Srinivas Manikandan",
+    "dueDate": "2023-11-20",
+    "priority": "High",
+    "status": "Hold",
+    "id": 2
+  },
+  {
+    "description": "Display Tasks and Search Api & Client",
+    "assignedTo": "Bishal Dhakal",
+    "dueDate": "2023-11-25",
+    "priority": "Low",
+    "status": "Completed",
+    "id": 3
+  }
+]

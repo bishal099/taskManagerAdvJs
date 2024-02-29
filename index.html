@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Project || Task Manager</title>
+  <!-- external css style.css -->
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="navbar">
+    <img src="./images/logo.png" alt="logo" />
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </header>
+  <!-- main -->
+  <main class="main" id="main">
+    <h1>Task Manager</h1>
+    <!-- form -->
+    <form id="taskForm" class="task-form">
+      <td><input id="taskDescription" class="task-input" type="text" placeholder="Task Description" /></td>
+      <td><input id="assignedTo" class="task-input" type="text" placeholder="Assigned To" /></td>
+      <td><input id="dueDate" class="task-input" type="date" placeholder="Due Date" /></td>
+
+      <select id="taskPriority" class="task-input">
+        <option value="task-priority" selected disabled> Choose Priority</option>
+        <option value="High">High Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="Low">Low Priority</option>
+      </select>
+
+      <select id="taskStatus" class="task-input">
+        <option value="task-status" selected disabled>Choose Status</option>
+        <option value="Started">Started</option>
+        <option value="Progress">Progress</option>
+        <option value="Completed">Completed</option>
+        <option value="Hold">On Hold</option>
+      </select>
+      <button id="btnAddTask" class="btnAddTask">Save Task</button>
+    </form>
+
+    <h2>Task Lists</h2>
+    <div class="search-container">
+      <input type="text" id="searchFilter" placeholder="Search tasks..." />
+    </div>
+    <div class="table-container">
+      <!-- table -->
+      <table id="table">
+        <thead>
+          <tr>
+            <th>S.N.</th>
+            <th>Task Description</th>
+            <th>Assigned To</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="taskList">
+          <!-- data will be appended here from js -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <!-- footer -->
+  <div class="footer">
+    <p>&copy; Task Manager 2023</p>
+    <p>Created With 🤍 By <strong>Group 5</strong></p>
+  </div>
+  <!-- external js client_script.js -->
+  <script src="client_script.js"></script>
+</body>
+
+</html>
